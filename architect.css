@@ -1,0 +1,123 @@
+.background-image {
+  position: relative;
+  width: 100%;
+  height: 500px; /* veya resmin gerçek yüksekliği */
+}
+
+.background-image img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+h1{
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.800)
+}
+
+.text-overlay {
+  background: linear-gradient(rgba(200, 200, 200, 0.5), rgba(0,0,0,0.6)), url('img/background.jpg') center/cover no-repeat;
+  padding: 0px 0; /* Yatay ve dikey iç boşluk */
+}
+
+.text-overlay h2 {
+  font-size: 2rem; /* Başlık metninin büyüklüğü */
+  color: #0a0a0a;
+  text-shadow: 0 0 10px rgba(17, 1, 1, 0.726);
+}
+.text-overlay p {
+  font-size: 1rem; /* Paragraf metninin büyüklüğü */
+  line-height: 1; /* Satır yüksekliği */
+  color: #e4e4e4;
+}
+.text-overlay strong {
+  color: #0a0a0a; /* Kalın metin rengi */
+  text-shadow: 0 0 10px rgba(129, 129, 129, 0.726);
+}
+
+
+.cursive-font {
+  font-family: 'cursive', sans-serif; /* El yazısı fontu */
+}
+
+.card {
+  margin: 0 auto;
+  background-color: rgba(200, 200, 200, 0.5);
+  border: none; /* Kenarlık olmaması için */
+  border-radius: 15px; /* Kenarların yuvarlatılması */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Gölgelendirme */
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.card img {
+  border-radius: 15px 15px 0 0; /* Kartın üst kısmındaki resmin kenarlarının yuvarlatılması */
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold; /* Başlık metninin kalın olması */
+}
+
+.card-text {
+  font-size: 14px; /* Metin boyutunun küçültülmesi */
+}
+.card-body .btn {
+  display: block; /* Butonun blok düzende olmasını sağlar */
+  margin: 0 auto; /* Dikey ve yatayda otomatik hizalamayı sağlar */
+  width: fit-content; /* Butonun içeriğine uygun genişlik sağlar */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6));
+}
+
+
+.navbar {
+  background-color: transparent !important; /* !important ile mevcut stil üzerine yazdığımızdan emin oluruz */
+  backdrop-filter: none; /* Arka plan efektini kaldırır */  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  text-align: center;
+  width: 100%;
+  font-size: 2rem; 
+  font-weight: bold; 
+  color: #fff; /* Yazı rengini beyaz yapın */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Yazıya gölge ekleyin */
+}
+.btn-outline-success {
+  color: #fff; /* Yazı rengini beyaz yapın */
+  background-color: #626364; /* Arka plan rengini yeşil tonu olarak ayarlayın */
+  border-color: #fdfdfd; /* Kenarlık rengini yeşil tonu olarak ayarlayın */
+}
+
+.btn-outline-success:hover {
+  color: #626364; /* Butonun üzerine gelindiğinde yazı rengini yeşil yapın */
+  background-color: #fff; /* Butonun üzerine gelindiğinde arka plan rengini beyaz yapın */
+  border-color: #626364; /* Butonun üzerine gelindiğinde kenarlık rengini yeşil tonu olarak ayarlayın */
+}
+
+
+
+.cursive-font {
+  font-family: cursive;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
